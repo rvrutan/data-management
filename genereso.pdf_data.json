@@ -1,0 +1,631 @@
+[{
+  "_id": {
+    "$oid": "67d84f0289f9178265253baa"
+  },
+  "projectNameTitle": "Copper Cliff",
+  "assetType": "Deposit",
+  "workType": "Underground",
+  "developmentStatus": "Resources",
+  "location": "Sudbury, Ontario, Canada",
+  "lat": 46.492,
+  "long": -81.068,
+  "nearestLandmark": "5 km W of Sudbury",
+  "mineTechnology": "Underground",
+  "processingTechnology": null,
+  "commodities": "No commodities available",
+  "nickel": {
+    "primaryCommodities": "Nickel"
+  },
+  "assetsInMineComplex": [
+    {
+      "asset": "Copper Cliff",
+      "assetType": "Operating Mine",
+      "status": "Active"
+    },
+    {
+      "asset": "Copper Cliff North",
+      "assetType": "Operating Mine",
+      "status": "Active"
+    },
+    {
+      "asset": "Copper Cliff Pit",
+      "assetType": "Deposit",
+      "status": "Active"
+    }
+  ],
+  "company": "Vale S.A.",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Canada"
+},
+{
+  "_id": {
+    "$oid": "67d84f02abbcdbe6b8f2ac11"
+  },
+  "projectNameTitle": "Coleman",
+  "assetType": "Operating Mine",
+  "location": "Sudbury, Ontario, Canada",
+  "lat": 46.677,
+  "long": -81.34,
+  "workType": "Underground",
+  "developmentStatus": "Production",
+  "nearestLandmark": "34 km NW of Sudbury",
+  "commodities": "No commodities available",
+  "primaryCommodities": null,
+  "assetsInMineComplex": {
+    "coleman": {
+      "assetType": "Operating Mine",
+      "status": "Active"
+    }
+  },
+  "company": "Vale S.A.",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Canada",
+  "mineOffice": "Coleman",
+  "mineOfficeLocation": "Sudbury, Ontario, Canada",
+  "ownerOrOperator": null,
+  "hqLocationMailing": "Sudbury, Ontario, Canada",
+  "mineTechnology": "Underground",
+  "processingTechnology": null
+},
+{
+  "_id": {
+    "$oid": "67d84f02afae58003b59179a"
+  },
+  "projectNameTitle": "Frood-Stobie",
+  "lat": 46.534,
+  "long": -80.998,
+  "assetType": "Historical Mine",
+  "workType": null,
+  "developmentStatus": "Closed",
+  "location": "Sudbury, Ontario, Canada",
+  "nearestLandmark": "5 km N of Sudbury",
+  "mineTechnology": "Tailings",
+  "processingTechnology": null,
+  "commodities": "No commodities available",
+  "nickel": {
+    "primaryCommodities": "Nickel"
+  },
+  "assetsInMineComplex": [
+    {
+      "asset": "Frood-Stobie",
+      "assetType": "Historical Mine",
+      "status": "Care & Maintenance"
+    },
+    {
+      "asset": "Little Stobie",
+      "assetType": "Historical Mine",
+      "status": "Abandoned"
+    },
+    {
+      "asset": "Stobie",
+      "assetType": "Operating Mine",
+      "status": "Care & Maintenance"
+    }
+  ],
+  "company": "Vale S.A.",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Canada"
+},
+{
+  "_id": {
+    "$oid": "67d84f0286aba3938ea661ed"
+  },
+  "projectNameTitle": "Dumont Nickel",
+  "lat": 48.653,
+  "long": -78.45,
+  "assetType": "Deposit",
+  "workType": null,
+  "developmentStatus": "Permitting",
+  "location": "Val-d Or, Quebec, Canada",
+  "nearestLandmark": "25 km WNW of Amos",
+  "commodities": "No commodities available",
+  "primaryCommodities": null,
+  "assetsInMineComplex": [
+    {
+      "asset": "Dumont",
+      "assetType": "Deposit",
+      "status": "Active"
+    }
+  ],
+  "ownershipAndOptions": {
+    "company": "Waterton Global Resource Management Inc.",
+    "companyType": "Private",
+    "ownership": "100%",
+    "optioned": null,
+    "country": "Canada"
+  },
+  "mineTechnology": null,
+  "processingTechnology": null
+},
+{
+  "_id": {
+    "$oid": "67d84f027080ffa1f21ac2e9"
+  },
+  "projectNameTitle": "El Boleo",
+  "assetType": "Operating Mine",
+  "workType": "Open Pit/Underground",
+  "developmentStatus": "Production",
+  "location": "Mexico, Baja California Sur, Mexico",
+  "lat": 27.36,
+  "long": -112.335,
+  "nearestLandmark": "7 km WNW of Santa Rosalia",
+  "mineTechnology": "Open Pit/Underground",
+  "processingTechnology": null,
+  "commodities": "No commodities available",
+  "primaryCommodities": null,
+  "assetsInMineComplex": {
+    "elBoleo": {
+      "assetType": "Operating Mine",
+      "status": "Active"
+    }
+  },
+  "ownershipAndOptions": {
+    "koreaMineRehabilitationAndMineralResourcesCorpKomir": {
+      "companyType": "Private",
+      "ownership": "100%",
+      "optioned": null,
+      "country": "Mexico"
+    }
+  },
+  "production": "2019",
+  "cobalt": {
+    "kt": 0.21
+  },
+  "zinc": {
+    "kt": 1.11
+  },
+  "copper": {
+    "kt": 13.64
+  }
+},
+{
+  "_id": {
+    "$oid": "67d84f03e4ae10c92d944db6"
+  },
+  "projectNameTitle": "Creighton",
+  "assetType": "Operating Mine",
+  "lat": 46.474,
+  "long": -81.186,
+  "location": "Sudbury, Ontario, Canada",
+  "workType": "Underground",
+  "developmentStatus": "Production",
+  "nearestLandmark": "15 km WSW of Sudbury",
+  "mineTechnology": "Underground",
+  "processingTechnology": null,
+  "noCommoditiesAvailable": null,
+  "primaryCommodities": "Nickel",
+  "assetsInMineComplex": [
+    {
+      "asset": "Creighton",
+      "assetType": "Operating Mine",
+      "status": "Active"
+    }
+  ],
+  "company": "Vale S.A.",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Canada",
+  "mineOffice": "Creighton",
+  "mineOfficeLocation": "Sudbury, Ontario, Canada"
+},
+{
+  "_id": {
+    "$oid": "67d84f0383e9b253495b2fe7"
+  },
+  "projectNameTitle": "Copper Cliff Smelter",
+  "lat": 46.479,
+  "long": -81.055,
+  "assetType": "Smelter",
+  "location": "Sudbury, Ontario, Canada",
+  "workType": null,
+  "developmentStatus": "Production",
+  "nearestLandmark": "5 km WSW of Suidbury",
+  "commodities": "No commodities available",
+  "primaryCommodities": null,
+  "assetsInMineComplex": [
+    {
+      "asset": "Copper Cliff Smelter",
+      "assetType": "Smelter",
+      "status": "Active"
+    }
+  ],
+  "ownershipAndOptions": [
+    {
+      "company": "Vale S.A.",
+      "companyType": "Listed",
+      "ownership": "100%",
+      "optioned": null,
+      "country": "Canada"
+    }
+  ],
+  "mineTechnology": null,
+  "processingTechnology": null,
+  "mineOffice": "Copper Cliff Smelter",
+  "mineOfficeLocation": "Sudbury, Ontario, Canada",
+  "ownerOrOperator": null,
+  "hqLocationMailing": "Sudbury, Ontario, Canada"
+},
+{
+  "_id": {
+    "$oid": "67d84f048cbd1e1f4d5434c8"
+  },
+  "projectNameTitle": "Broken Hill",
+  "assetType": "Deposit",
+  "workType": "Open Pit",
+  "developmentStatus": "Feasibility",
+  "commodities": "Nickel",
+  "location": "New South Wales, Australia",
+  "lat": -32.09,
+  "long": 141.2,
+  "nearestLandmark": "30 km WSW of Broken Hill",
+  "mineTechnology": "Open Pit",
+  "processingTechnology": "Leaching (Generic)",
+  "primaryCommodities": "Cobalt",
+  "asset": "Broken Hill",
+  "assetTypeMineComplex": "Deposit",
+  "status": "Active",
+  "company": "Cobalt Blue Holdings Limited",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Australia",
+  "oreTonnageT": {
+    "pAndP": 0,
+    "mAndI": 83600000,
+    "inf": 43000000
+  },
+  "cobalt": {
+    "gradePercent": {
+      "pAndP": 0,
+      "mAndI": 0.07,
+      "inf": 0.06
+    },
+    "metalLb": {
+      "pAndP": 0,
+      "mAndI": 132901200,
+      "inf": 59508000
+    }
+  },
+  "nickel": {
+    "gradePercent": {
+      "pAndP": 0,
+      "mAndI": 0.01,
+      "inf": 0.01
+    },
+    "metalLb": {
+      "pAndP": 0,
+      "mAndI": 25566400,
+      "inf": 11901600
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67d84f04e9746396f1f2e7e5"
+  },
+  "projectNameTitle": "Garson",
+  "assetType": "Deposit",
+  "workType": null,
+  "developmentStatus": "Resources",
+  "location": "Sudbury, Ontario, Canada",
+  "lat": 46.568,
+  "long": -80.857,
+  "nearestLandmark": "15 km NE of Sudbury",
+  "mineTechnology": null,
+  "processingTechnology": null,
+  "primaryCommodities": "Nickel",
+  "assetsInMineComplex": [
+    {
+      "asset": "Garson",
+      "assetType": "Operating Mine",
+      "status": "Active"
+    },
+    {
+      "asset": "McConnell",
+      "assetType": "Deposit",
+      "status": "Active"
+    }
+  ],
+  "company": "Vale S.A.",
+  "companyType": "Listed",
+  "ownership": "100%",
+  "optioned": null,
+  "country": "Canada",
+  "oreTonnageT": {
+    "resource": "Ore Tonnage (t)",
+    "pAndP": 5436000,
+    "mAndI": 2828000,
+    "inf": 916000
+  },
+  "cobalt": {
+    "resource": "Cobalt",
+    "gradePercent": {
+      "pAndP": 0.05,
+      "mAndI": 0.06,
+      "inf": 0.05
+    },
+    "metalLb": {
+      "pAndP": 5992000,
+      "mAndI": 3994000,
+      "inf": 1010000
+    }
+  },
+  "copper": {
+    "resource": "Copper",
+    "gradePercent": {
+      "pAndP": 0,
+      "mAndI": 1.47,
+      "inf": 1.9
+    },
+    "metalLb": {
+      "pAndP": 0,
+      "mAndI": 91628000,
+      "inf": 38369000
+    }
+  },
+  "gold": {
+    "resource": "Gold",
+    "gradeGramsPerTonne": {
+      "pAndP": 0,
+      "mAndI": 0.49,
+      "inf": 0.3
+    },
+    "metalOz": {
+      "pAndP": 0,
+      "mAndI": 45000,
+      "inf": 9000
+    }
+  },
+  "nickel": {
+    "resource": "Nickel",
+    "gradePercent": {
+      "pAndP": 0,
+      "mAndI": 1.39,
+      "inf": 1.4
+    },
+    "metalLb": {
+      "pAndP": 0,
+      "mAndI": 86398000,
+      "inf": 28272000
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "67d84f05153cd787ff4896e1"
+  },
+  "projectNameTitle": "Mutanda",
+  "assetType": "Operating Mine",
+  "workType": "Open Pit",
+  "developmentStatus": "Production",
+  "commodities": "Copper",
+  "primaryCommodities": "Cobalt",
+  "location": "Lualaba, Democratic Republic of Congo (DRC)",
+  "lat": -10.787,
+  "long": 25.817,
+  "mineTechnology": "Open Pit, Stockpile, Underground",
+  "processingTechnology": "Heap Leach (HL)",
+  "nearestLandmark": "35 km E of Kolwezi",
+  "asset": "Mutanda",
+  "assetTypeAsset": "Operating Mine",
+  "status": "Active",
+  "company": "Glencore",
+  "companyType": "Listed",
+  "ownership": "95%",
+  "optioned": null,
+  "country": "Democratic Republic of Congo (DRC)",
+  "drcCompany": "Democratic Republic of the Congo",
+  "drcOwnership": "5%",
+  "drcCountry": "Democratic Republic of Congo (DRC)",
+  "oreTonnageT": 132600000,
+  "mAndITonnageT": 467000000,
+  "infTonnageT": 17400000,
+  "cobaltProduction2023T": 11200,
+  "copperProduction2023T": 35100,
+  "cobalt": {
+    "gradePAndP": 0.69,
+    "gradeMAndI": 0.53,
+    "gradeINF": 0.54,
+    "metalPAndPLb": 2028250400,
+    "metalMAndILb": 5346203500,
+    "metalINFLb": 207234280
+  },
+  "copper": {
+    "gradePAndP": 1.51,
+    "gradeMAndI": 1.31,
+    "gradeINF": 0.72,
+    "metalPAndPLb": 4407035380,
+    "metalMAndILb": 13492274400,
+    "metalINFLb": 286600600
+  },
+  "mineOffice": "Mutanda",
+  "mineOfficeLocation": "Lualaba, Democratic Republic of Congo (DRC)",
+  "hqLocationMailing": "Lualaba, Democratic Republic of Congo (DRC)"
+},
+{
+  "_id": {
+    "$oid": "67d84f06a7d49a8ea831eaf7"
+  },
+  "projectNameTitle": "Crawford",
+  "lat": 48.831,
+  "long": -81.365,
+  "assetType": "Deposit",
+  "workType": "Open Pit",
+  "developmentStatus": "Feasibility",
+  "commodities": "Cobalt",
+  "primaryCommodities": "Nickel",
+  "location": "Timmins, Ontario, Canada",
+  "nearestLandmark": "40 km N of Timmins",
+  "mineTechnology": "Open Pit",
+  "processingTechnology": "Flotation (Froth)",
+  "assetsInMineComplex": [
+    {
+      "asset": "Crawford",
+      "assetType": "Deposit",
+      "status": "Active"
+    },
+    {
+      "asset": "Crawford Thumb",
+      "assetType": "Zone",
+      "status": "Active"
+    }
+  ],
+  "ownershipAndOptions": [
+    {
+      "company": "Canada Nickel Company Inc.",
+      "companyType": "Listed",
+      "ownership": "100%",
+      "optioned": null,
+      "country": "Canada"
+    }
+  ],
+  "oreTonnage": {
+    "resource": "Ore tonnage (t)",
+    "pAndP": 1715000000,
+    "mAndI": 2561800000,
+    "inf": 1693100000
+  },
+  "chromite": {
+    "resource": "Chromite",
+    "gradePercent": 0.57,
+    "metalT": 9787000,
+    "mAndI": 0.8,
+    "inf": 0.57,
+    "metalT2": 15066000,
+    "metalT3": 9674000
+  },
+  "cobalt": {
+    "resource": "Cobalt",
+    "gradePercent": 0.01,
+    "metalLb": 473860000,
+    "mAndI": 0.01,
+    "inf": 0.01,
+    "metalLb2": 727760800,
+    "metalLb3": 489288000
+  },
+  "nickel": {
+    "resource": "Nickel",
+    "gradePercent": 0.22,
+    "metalLb": 8350956000,
+    "mAndI": 0.24,
+    "inf": 0.22,
+    "metalLb2": 13301801200,
+    "metalLb3": 8212765200
+  },
+  "palladium": {
+    "resource": "Palladium",
+    "gradeGt": 0.01,
+    "metalOz": 777000,
+    "mAndI": 0.01,
+    "inf": 0.01,
+    "metalOz2": 1188700,
+    "metalOz3": 593600
+  },
+  "platinum": {
+    "resource": "Platinum",
+    "gradeGt": 0.01,
+    "metalOz": 519000,
+    "mAndI": 0.01,
+    "inf": 0.01,
+    "metalOz2": 782700,
+    "metalOz3": 496100
+  },
+  "ownerOrOperator": "Canada Nickel Company Inc.",
+  "hqLocationMailing": "Timmins, Ontario, Canada"
+},
+{
+  "_id": {
+    "$oid": "67d84f06cf16c4460502f005"
+  },
+  "projectNameTitle": "NorthMet",
+  "lat": 47.619,
+  "long": -91.971,
+  "assetType": "Deposit",
+  "workType": "Open Pit",
+  "developmentStatus": "Feasibility",
+  "commodities": "Nickel, Palladium",
+  "primaryCommodities": "Copper",
+  "location": "Minnesota, United States of America",
+  "nearestLandmark": "95 km N of Duluth",
+  "mineTechnology": "Open Pit",
+  "processingTechnology": "Flotation (Froth)",
+  "assetName": "NorthMet",
+  "assetTypeComplex": "Deposit",
+  "assetStatus": "Active",
+  "companyName1": "Teck Resources Limited",
+  "companyType1": "Listed",
+  "ownership1": "50%",
+  "optioned1": null,
+  "country1": "United States of America",
+  "companyName2": "Glencore",
+  "companyType2": "Listed",
+  "ownership2": "50%",
+  "optioned2": null,
+  "country2": "United States of America",
+  "oreTonnagePAndP": "264000000",
+  "oreTonnageMAndI": "636000000",
+  "oreTonnageINF": "400000000",
+  "cobalt": {
+    "gradePAndP": "0.01",
+    "metalPAndP": "43651476",
+    "gradeMAndI": "0.01",
+    "metalMAndI": "99207900",
+    "gradeINF": "0.01",
+    "metalINF": "48501640"
+  },
+  "copper": {
+    "gradePAndP": "0.29",
+    "metalPAndP": "1697557400",
+    "gradeMAndI": "0.25",
+    "metalMAndI": "3571484400",
+    "gradeINF": "0.25",
+    "metalINF": "2204620000"
+  },
+  "gold": {
+    "gradePAndP": "0.04",
+    "metalPAndP": "340000",
+    "gradeMAndI": "0.03",
+    "metalMAndI": "710000",
+    "gradeINF": "0.03",
+    "metalINF": "390000"
+  },
+  "nickel": {
+    "gradePAndP": "0.08",
+    "metalPAndP": "473993300",
+    "gradeMAndI": "0.07",
+    "metalMAndI": "992079000",
+    "gradeINF": "0.07",
+    "metalINF": "617293600"
+  },
+  "palladium": {
+    "gradePAndP": "0.26",
+    "metalPAndP": "2200000",
+    "gradeMAndI": "0.23",
+    "metalMAndI": "4800000",
+    "gradeINF": "0.24",
+    "metalINF": "3100000"
+  },
+  "platinum": {
+    "gradePAndP": "0.08",
+    "metalPAndP": "680000",
+    "gradeMAndI": "0.07",
+    "metalMAndI": "1430000",
+    "gradeINF": "0.07",
+    "metalINF": "900000"
+  },
+  "silver": {
+    "gradePAndP": "1.06",
+    "metalPAndP": "8980000",
+    "gradeMAndI": "0.93",
+    "metalMAndI": "19000000",
+    "gradeINF": "0.92",
+    "metalINF": "12000000"
+  }
+}]
