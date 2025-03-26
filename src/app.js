@@ -1,48 +1,70 @@
 const express = require('express');
-const { sequelize } = require('./config/database');
-const projectRoutes = require('./routes/projects');
-const logger = require('./utils/logger');
+const { Project } = require('./models');
 
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Request logging middleware
-app.use((req, res, next) => {
-  logger.info(`${req.method} ${req.url}`);
-  next();
-});
-
-// Routes
-app.use('/api/projects', projectRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// 404 handler
-app.use((req, res) => {
-  logger.warn(`404 Not Found: ${req.method} ${req.url}`);
-  res.status(404).json({ error: 'Not Found' });
+// Get all projects
+app.get('/api/projects', async (req, res) => {
+  try {
+    const projects = await Project.findAll();
+    res.json(projects);
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  logger.error('Unhandled error:', err);
-  res.status(500).json({ 
-    error: 'Internal server error',
-    message: process.env.NODE_ENV === 'development' ? err.message : undefined
-  });
+// Get a single project by ID
+app.get('/api/projects/:id', async (req, res) => {
+  try {
+    const project = await Project.findByPk(req.params.id);
+    if (!project) {
+      return res.status(404).json({ error: 'Project not found' });
+    }
+    res.json(project);
+  } catch (error) {
+    console.error('Error fetching project:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
-// Graceful shutdown
-process.on('SIGTERM', async () => {
-  logger.info('SIGTERM received. Closing HTTP server and database connection...');
-  await sequelize.close();
-  process.exit(0);
+// Create a new project
+app.post('/api/projects', async (req, res) => {
+  try {
+    const project = await Project.create(req.body);
+    res.status(201).json(project);
+  } catch (error) {
+    console.error('Error creating project:', error);
+    res.status(400).json({ error: 'Invalid project data' });
+  }
+});
+
+// Update an existing project
+app.put('/api/projects/:id', async (req, res) => {
+  try {
+    const project = await Project.findByPk(req.params.id);
+    if (!project) {
+      return res.status(404).json({ error: 'Project not found' });
+    }
+    
+    // Update the project with new data
+    await project.update(req.body);
+    
+    // Fetch the updated project
+    const updatedProject = await Project.findByPk(req.params.id);
+    res.json(updatedProject);
+  } catch (error) {
+    console.error('Error updating project:', error);
+    res.status(400).json({ error: 'Invalid project data' });
+  }
 });
 
 module.exports = app; 

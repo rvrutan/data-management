@@ -1,21 +1,22 @@
 const app = require('./app');
-const logger = require('./utils/logger');
+const { sequelize, initializeDatabase } = require('./config/database');
+require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
-const server = app.listen(PORT, () => {
-  logger.info(`Server is running on port ${PORT}`);
-  logger.info(`Environment: ${process.env.NODE_ENV || 'development'}`);
-});
-
-// Handle uncaught exceptions
-process.on('uncaughtException', (error) => {
-  logger.error('Uncaught Exception:', error);
-  process.exit(1);
-});
-
-// Handle unhandled promise rejections
-process.on('unhandledRejection', (reason, promise) => {
-  logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
-  process.exit(1);
+// Start server
+app.listen(PORT, async () => {
+  try {
+    // Initialize database
+    await initializeDatabase();
+    
+    // Sync database
+    await sequelize.sync();
+    console.log('Database synced successfully.');
+    
+    console.log(`Server is running on port ${PORT}`);
+  } catch (error) {
+    console.error('Unable to start server:', error);
+    process.exit(1);
+  }
 }); 
