@@ -2,81 +2,41 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
 
 const Project = sequelize.define('Project', {
-  id: {
+  project_id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
   },
-  projectNameTitle: {
-    type: DataTypes.STRING,
+  project_name_title: {
+    type: DataTypes.TEXT,
     allowNull: false
   },
-  assetType: {
-    type: DataTypes.STRING,
+  asset_type: {
+    type: DataTypes.TEXT,
     allowNull: true
   },
-  workType: {
-    type: DataTypes.STRING,
+  work_type: {
+    type: DataTypes.TEXT,
     allowNull: true
   },
-  developmentStatus: {
-    type: DataTypes.STRING,
+  development_status: {
+    type: DataTypes.TEXT,
     allowNull: true
   },
   location: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: true
   },
-  lat: {
-    type: DataTypes.FLOAT,
+  mine_technology: {
+    type: DataTypes.TEXT,
     allowNull: true
   },
-  long: {
-    type: DataTypes.FLOAT,
-    allowNull: true
-  },
-  nearestLandmark: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  mineTechnology: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  processingTechnology: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  commodities: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  primaryCommodities: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  assetsInMineComplex: {
-    type: DataTypes.JSONB,
-    allowNull: true
-  },
-  company: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  companyType: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  ownership: {
-    type: DataTypes.STRING,
-    allowNull: true
-  },
-  optioned: {
-    type: DataTypes.STRING,
+  processing_technology: {
+    type: DataTypes.TEXT,
     allowNull: true
   },
   country: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: true
   }
 }, {

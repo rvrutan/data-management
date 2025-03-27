@@ -1,5 +1,5 @@
 const express = require('express');
-const { Project } = require('./models');
+const { Project, Asset, Company, Commodity, Geolocation, Production } = require('./models');
 
 const app = express();
 
@@ -11,10 +11,18 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Get all projects
+// Get all projects with their related data
 app.get('/api/projects', async (req, res) => {
   try {
-    const projects = await Project.findAll();
+    const projects = await Project.findAll({
+      include: [
+        { model: Asset },
+        { model: Company },
+        { model: Commodity },
+        { model: Geolocation },
+        { model: Production }
+      ]
+    });
     res.json(projects);
   } catch (error) {
     console.error('Error fetching projects:', error);
@@ -22,10 +30,18 @@ app.get('/api/projects', async (req, res) => {
   }
 });
 
-// Get a single project by ID
+// Get a single project with all related data
 app.get('/api/projects/:id', async (req, res) => {
   try {
-    const project = await Project.findByPk(req.params.id);
+    const project = await Project.findByPk(req.params.id, {
+      include: [
+        { model: Asset },
+        { model: Company },
+        { model: Commodity },
+        { model: Geolocation },
+        { model: Production }
+      ]
+    });
     if (!project) {
       return res.status(404).json({ error: 'Project not found' });
     }
@@ -36,7 +52,72 @@ app.get('/api/projects/:id', async (req, res) => {
   }
 });
 
-// Create a new project
+// Get all assets
+app.get('/api/assets', async (req, res) => {
+  try {
+    const assets = await Asset.findAll({
+      include: [{ model: Project }]
+    });
+    res.json(assets);
+  } catch (error) {
+    console.error('Error fetching assets:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Get all companies
+app.get('/api/companies', async (req, res) => {
+  try {
+    const companies = await Company.findAll({
+      include: [{ model: Project }]
+    });
+    res.json(companies);
+  } catch (error) {
+    console.error('Error fetching companies:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Get all commodities
+app.get('/api/commodities', async (req, res) => {
+  try {
+    const commodities = await Commodity.findAll({
+      include: [{ model: Project }]
+    });
+    res.json(commodities);
+  } catch (error) {
+    console.error('Error fetching commodities:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Get all geolocations
+app.get('/api/geolocations', async (req, res) => {
+  try {
+    const geolocations = await Geolocation.findAll({
+      include: [{ model: Project }]
+    });
+    res.json(geolocations);
+  } catch (error) {
+    console.error('Error fetching geolocations:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Get all production data
+app.get('/api/production', async (req, res) => {
+  try {
+    const production = await Production.findAll({
+      include: [{ model: Project }]
+    });
+    res.json(production);
+  } catch (error) {
+    console.error('Error fetching production data:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Create a new project with related data
 app.post('/api/projects', async (req, res) => {
   try {
     const project = await Project.create(req.body);
@@ -55,11 +136,16 @@ app.put('/api/projects/:id', async (req, res) => {
       return res.status(404).json({ error: 'Project not found' });
     }
     
-    // Update the project with new data
     await project.update(req.body);
-    
-    // Fetch the updated project
-    const updatedProject = await Project.findByPk(req.params.id);
+    const updatedProject = await Project.findByPk(req.params.id, {
+      include: [
+        { model: Asset },
+        { model: Company },
+        { model: Commodity },
+        { model: Geolocation },
+        { model: Production }
+      ]
+    });
     res.json(updatedProject);
   } catch (error) {
     console.error('Error updating project:', error);
