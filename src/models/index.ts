@@ -1,9 +1,9 @@
-const Project = require('./Project');
-const Asset = require('./Asset');
-const Company = require('./Company');
-const Commodity = require('./Commodity');
-const Geolocation = require('./Geolocation');
-const Production = require('./Production');
+import Project from './Project';
+import Asset from './Asset';
+import Company from './Company';
+import Commodity from './Commodity';
+import Geolocation from './Geolocation';
+import Production from './Production';
 
 // Define relationships
 Project.hasMany(Asset, { foreignKey: 'project_id' });
@@ -21,7 +21,7 @@ Geolocation.belongsTo(Project, { foreignKey: 'project_id' });
 Project.hasOne(Production, { foreignKey: 'project_id' });
 Production.belongsTo(Project, { foreignKey: 'project_id' });
 
-module.exports = {
+export {
   Project,
   Asset,
   Company,
